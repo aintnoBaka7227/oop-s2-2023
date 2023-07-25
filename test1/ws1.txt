@@ -1,0 +1,4 @@
+1. provide a concise and clear description of the changes you made in that particular commit.
+2. Clear and descriptive
+3. commit frequently and in logical chunks
+4. As for whether you should commit all files, including binaries, images, and log files to Git, the statement is False
