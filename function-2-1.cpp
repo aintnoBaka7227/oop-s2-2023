@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-void print_binary_string(std::string decimal_number) {
+void print_binary_str(std::string decimal_number) {
   if (decimal_number == "0") {
     std::cout << "0" << std::endl;
   } 
