@@ -22,9 +22,10 @@ void print_binary_str(std::string decimal_number) {
     }
 
     std::string binary = "";
-    for (int i = reverse_binary.length(); i > -1; i--) {
+    for (int i = reverse_binary.length() - 1; i > -1; i--) {
       binary = binary + reverse_binary[i];
     }
+    binary = binary + "\0";
 
     std::cout << binary << std::endl;
   }
