@@ -12,12 +12,10 @@ int is_identity(int array[10][10]) {
                 if (array[i][j] != 1) {
                     return 0;
                 }
-                else {
-                    return 1;
-                }
             }
         }
     }
+    return 1;
 }
 
 
