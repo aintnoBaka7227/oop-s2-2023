@@ -2,6 +2,7 @@
 
 // The `extern` keyword tells the compiler that the count function exists,
 // but will be implemented somewhere else
+// question: without extern, the program still run ...
 extern int count(int array[], int n);
 
 int main() {
