@@ -1,6 +1,6 @@
 #include <iostream>
 
-extern int *readNumber();
+extern int *readNumbers();
 extern bool equalArray(int *numbers1, int *numbers2, int length);
 
 int main() {
@@ -8,8 +8,8 @@ int main() {
     int length = 3; 
     int *ran_ray1 = new int[length];
     int *ran_ray2 = new int[length];
-    ran_ray1 = readNumber();
-    ran_ray2 = readNumber();
+    ran_ray1 = readNumbers();
+    ran_ray2 = readNumbers();
 
     std::cout << equalArray(ran_ray1, ran_ray2, length);
     delete[]ran_ray1;
