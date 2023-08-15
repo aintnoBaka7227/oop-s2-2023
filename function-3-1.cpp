@@ -2,7 +2,7 @@
 
 int *readNumbers() {
     int *ran = new int[10];
-    std::cout << "Enter 10 integers: ";
+    //std::cout << "Enter 10 integers: ";
     for(int i = 0; i < 10; i++) {
         std::cin >> ran[i];
     }
