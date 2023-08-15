@@ -1,7 +1,7 @@
 #include <iostream>
 
 extern int *readNumbers();
-extern bool equalArray(int *numbers1, int *numbers2, int length);
+extern bool equalsArray(int *numbers1, int *numbers2, int length);
 
 int main() {
     
@@ -11,7 +11,7 @@ int main() {
     ran_ray1 = readNumbers();
     ran_ray2 = readNumbers();
 
-    std::cout << equalArray(ran_ray1, ran_ray2, length);
+    std::cout << equalsArray(ran_ray1, ran_ray2, length);
     delete[]ran_ray1;
     delete[]ran_ray2;
     return 0;

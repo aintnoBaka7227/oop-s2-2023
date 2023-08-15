@@ -15,7 +15,7 @@ void printNumbers(int *numbers, int length) {
     }
 }
 
-bool equalArray(int *numbers1, int *numbers2, int length) {
+bool equalsArray(int *numbers1, int *numbers2, int length) {
     if (length <= 0) {
         return false;
     }
