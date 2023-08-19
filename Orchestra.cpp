@@ -35,6 +35,7 @@ Musician *Orchestra::get_members() {
 
 bool Orchestra::add_musician(Musician new_musician) {
     if(current_size < max_size) {
+        member[current_size] = new_musician;
         current_size++;
         return true;
     }
