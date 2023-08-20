@@ -61,6 +61,6 @@ std::cout << "Musician " << i+1 << " plays " << members[i].get_instrument()
 << " and has " << members[i].get_experience() << " years of experience" <<
 std::endl;
 }
-delete [] members;
+
 return 0;
 }

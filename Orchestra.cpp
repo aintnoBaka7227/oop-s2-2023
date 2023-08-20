@@ -3,14 +3,14 @@
 #include "Orchestra.h"
 
 
-Orchestra::Orchestra() {
-    max_size = 0;
-    current_size = 0;
-}
-
 Orchestra::Orchestra(int size) {
     max_size = size;
-    member = new Musician[size];
+    member = new Musician[max_size];
+}
+
+Orchestra::Orchestra():Orchestra(0) {
+    max_size = 0;
+    current_size = 0;
 }
 
 int Orchestra::get_current_number_of_members(){
