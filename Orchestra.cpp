@@ -39,9 +39,7 @@ bool Orchestra::add_musician(Musician new_musician) {
         current_size++;
         return true;
     }
-    else {
-        return false;
-    }
+    return false;
 }
 
 Orchestra::~Orchestra() {
