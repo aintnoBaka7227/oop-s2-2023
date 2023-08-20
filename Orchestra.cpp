@@ -5,12 +5,12 @@
 
 Orchestra::Orchestra(int size) {
     max_size = size;
+    current_size = 0;
     member = new Musician[max_size];
 }
 
 Orchestra::Orchestra():Orchestra(0) {
     max_size = 0;
-    current_size = 0;
 }
 
 int Orchestra::get_current_number_of_members(){
@@ -43,6 +43,6 @@ bool Orchestra::add_musician(Musician new_musician) {
 }
 
 Orchestra::~Orchestra() {
-    //delete[] member;
+    delete[] member;
 }
 

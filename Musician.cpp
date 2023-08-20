@@ -1,11 +1,7 @@
-#include <iostream>
+#include <string>
 #include "Musician.h"
 
 
-/*Musician::Musician() {
-
-}
-*/
 Musician::Musician(std::string instrument, int experience) {
     this->instrument = instrument;
     this->experience = experience;
