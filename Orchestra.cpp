@@ -43,6 +43,6 @@ bool Orchestra::add_musician(Musician new_musician) {
 }
 
 Orchestra::~Orchestra() {
-    delete[] member;
+    //delete[] member;
 }
 
