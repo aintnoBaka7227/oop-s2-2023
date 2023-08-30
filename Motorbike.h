@@ -4,10 +4,10 @@
 #include <ctime>
 
 class Motorbike : public Vehicle {
-    private:
-    std::time_t exit_time;
     public:
     int getParkingDuration();
+    Motorbike();
+    Motorbike(int sub_ID);
 };
 
 
