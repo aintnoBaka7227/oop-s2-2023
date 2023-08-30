@@ -5,9 +5,9 @@
 
 class Motorbike : public Vehicle {
     public:
-    int getParkingDuration();
     Motorbike();
     Motorbike(int sub_ID);
+    int getParkingDuration();
 };
 
 

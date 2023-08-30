@@ -12,6 +12,7 @@ class Vehicle {
     Vehicle();
     Vehicle(int sub_ID);
     int getID();
+    void setID(int sub_ID);
     int getParkingDuration();
 };
 
