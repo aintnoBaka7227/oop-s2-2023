@@ -18,7 +18,7 @@ class ParkingLot {
     int getCount();
     void parkVehicle(Vehicle *new_vehicle);
     void unparkVehicle(int unpark_ID);
-    int countOverstayingvehicles(int maxParkingDuration);
+    int countOverstayingVehicles(int maxParkingDuration);
     ~ParkingLot();
 
 
