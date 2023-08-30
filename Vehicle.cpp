@@ -21,7 +21,7 @@ int Vehicle::getID() {
 void Vehicle::setID(int sub_ID) {
     ID = sub_ID;
 }
-
+ 
 int Vehicle::getParkingDuration() {
     std::time_t current_time = std::time(0);
     std::time_t gap_time = current_time - timeOfEntry;
