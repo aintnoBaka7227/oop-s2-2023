@@ -2,6 +2,7 @@
 #include "Appliance.h"
 #include "Fridge.h"
 #include "TV.h"
+#include <iostream>
 
 House::House(int numAppliances) {
     this->numAppliances = numAppliances;
@@ -13,12 +14,18 @@ House::House():House(0) {
 
 }
 
+int House::get_currentNum() {
+    return currentNum;
+}
+
 bool House::addAppliance(Appliance* appliance) {
     if (currentNum < numAppliances) {
         appliances[currentNum] = appliance;
         currentNum++;
+        std::cout << "Added" << std::endl;
         return true;
     }
+    std::cout << "full" << std::endl;
     return false;
 }
 
@@ -30,9 +37,15 @@ double House::getTotalPowerConsumption() {
     return total;
 }
 
-House::~House() {
-    for (int i = 0; i < numAppliances; i++) {
-        delete [] appliances[i];
+void House::get_appliances() {
+    for (int i = 0; i < currentNum; i++) {
+        std::cout << appliances[i]->get_power_rating() << std::endl;
+        std::cout << appliances[i]->get_power_status() << std::endl;
+        std::cout << appliances[i]->getPowerConsumption() << std::endl;
     }
+}
+
+House::~House() {
     delete [] appliances;
 }
+

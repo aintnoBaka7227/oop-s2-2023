@@ -2,7 +2,7 @@
 #include "Fridge.h"
 
 Fridge::Fridge(int powerRating, double volume):Appliance(powerRating), volume(volume) {
-
+    isOn = false;
 }
 
 Fridge::Fridge():Fridge(0, 0) {

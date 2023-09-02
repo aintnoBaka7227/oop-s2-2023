@@ -1,4 +1,6 @@
-# pragma once
+#ifndef APPLIANCE_H
+#define APPLIANCE_H
+#include <iostream>
 
 class Appliance {
     protected:
@@ -16,3 +18,4 @@ class Appliance {
     virtual double getPowerConsumption() = 0;
 };
 
+#endif

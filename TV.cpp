@@ -2,7 +2,7 @@
 #include "TV.h"
 
 TV::TV(int powerRating, double screenSize):Appliance(powerRating), screenSize(screenSize) {
-
+    isOn = false;
 }
 
 TV::TV():TV(0, 0) {
