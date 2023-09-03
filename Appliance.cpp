@@ -2,10 +2,11 @@
 
 Appliance::Appliance(int powerRating) {
     this->powerRating = powerRating;
+    isOn = false;
 }
 
 Appliance::Appliance():Appliance(0) {
-    isOn = false;
+    
 }
 
 int Appliance::get_power_rating() {
