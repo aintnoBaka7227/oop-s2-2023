@@ -1,4 +1,5 @@
-#pragma once
+#ifndef HOUSE_H
+#define HOUSE_H
 #include "Appliance.h"
 #include "Fridge.h"
 #include "TV.h"
@@ -17,3 +18,5 @@ class House {
     void get_appliances();
     ~House();
 };
+
+#endif
