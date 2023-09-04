@@ -39,8 +39,8 @@ double House::getTotalPowerConsumption() {
 
 void House::get_appliances() {
     for (int i = 0; i < currentNum; i++) {
-        std::cout << appliances[i]->get_power_rating() << std::endl;
-        std::cout << appliances[i]->get_power_status() << std::endl;
+        std::cout << appliances[i]->get_powerRating() << std::endl;
+        std::cout << appliances[i]->get_isOn() << std::endl;
         std::cout << appliances[i]->getPowerConsumption() << std::endl;
     }
 }

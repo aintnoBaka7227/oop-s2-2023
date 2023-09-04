@@ -9,10 +9,10 @@ class Appliance {
     public:
     Appliance();
     Appliance(int powerRating);
-    int get_power_rating();
-    void set_power_rating(int powerRating);
-    bool get_power_status();
-    void set_power_status(bool isOn);
+    int get_powerRating();
+    void set_powerRating(int powerRating);
+    bool get_isOn();
+    void set_isOn(bool isOn);
     void turnOn();
     void turnOff();
     virtual double getPowerConsumption() = 0;

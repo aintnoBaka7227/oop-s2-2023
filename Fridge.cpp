@@ -19,7 +19,7 @@ double Fridge::getVolume() {
 
 double Fridge::getPowerConsumption() {
     int power_consumption;
-    power_consumption = get_power_rating() * 24 * (getVolume() / 100);
+    power_consumption = get_powerRating() * 24 * (getVolume() / 100);
     return power_consumption;
 }
 
