@@ -22,10 +22,8 @@ bool House::addAppliance(Appliance* appliance) {
     if (currentNum < numAppliances) {
         appliances[currentNum] = appliance;
         currentNum++;
-        std::cout << "Added" << std::endl;
         return true;
     }
-    std::cout << "full" << std::endl;
     return false;
 }
 
