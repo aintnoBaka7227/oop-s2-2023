@@ -5,7 +5,7 @@
 
 int main() {
     
-    Appliance *old = new Fridge(10,12);
+    Appliance* old = new Appliance(100);
     old->turnOn();
     std::cout << old->get_powerRating() << std::endl;
     std::cout << old->get_isOn() << std::endl;

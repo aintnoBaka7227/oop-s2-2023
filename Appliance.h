@@ -15,7 +15,7 @@ class Appliance {
     void set_isOn(bool isOn);
     void turnOn();
     void turnOff();
-    virtual double getPowerConsumption() = 0;
+    virtual double getPowerConsumption();
 };
 
 #endif

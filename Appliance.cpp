@@ -33,3 +33,6 @@ void Appliance::turnOn() {
     isOn = true;
 }
 
+double Appliance::getPowerConsumption() {
+    return 0;
+}
