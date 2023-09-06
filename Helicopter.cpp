@@ -4,6 +4,8 @@
 Helicopter::Helicopter(int w, std::string n) {
     weight = w;
     name = n;
+    fuel = 100;
+    numberOfFlights = 0;
 }
 
 Helicopter::Helicopter() {
@@ -32,7 +34,7 @@ void Helicopter::fly(int headwind, int minutes) {
     if (headwind < 40 && weight <= 5670) {
         demo = fuel - 0.2 * minutes;
     }
-    if (demo > 20) {
+    if (demo >= 20) {
         fuel = demo;
         numberOfFlights++;
     }

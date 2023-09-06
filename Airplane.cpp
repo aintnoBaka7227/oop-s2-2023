@@ -4,6 +4,8 @@
 Airplane::Airplane(int w, int p) {
     weight = w;
     numPassengers = p;
+    numberOfFlights = 0;
+    fuel = 100;
 }
 
 Airplane::Airplane() {
