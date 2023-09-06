@@ -6,10 +6,11 @@
 
 int main() {
     AirFleet adelaide;
-    Airplane(20, 10);
-    Helicopter(10000, "BlackHawk"); 
-    AirCraft(5000);
-    Helicopter(100, "WhiteHawk");
-    Airplane(15, 20);
+    AirCraft** check;
+    check = adelaide.get_fleet();
+    for (int i = 0; i < 5; i++) {
+        std::cout << check[i]->get_weight() << std::endl;
+    }
+
     return 0;
 }
