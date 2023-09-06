@@ -19,23 +19,23 @@ void Helicopter::set_name(std::string name) {
 }
 
 void Helicopter::fly(int headwind, int minutes) {
-    if( fuel >= 20) {
+    float demo = 0;
     if (headwind >= 40 && weight > 5670) {
-        fuel = fuel - 0.4 * minutes - 0.01 * (weight - 5670) * minutes;
+        demo = fuel - 0.4 * minutes - 0.01 * (weight - 5670) * minutes;
     }
     if (headwind >= 40 && weight <= 5670) {
-       fuel = fuel - 0.4 * minutes;
+       demo = fuel - 0.4 * minutes;
     }
     if (headwind < 40 && weight > 5670) {
-        fuel = fuel - 0.2 * minutes - 0.01 * (weight - 5670) * minutes;
+        demo = fuel - 0.2 * minutes - 0.01 * (weight - 5670) * minutes;
     }
     if (headwind < 40 && weight <= 5670) {
-        fuel = fuel - 0.2 * minutes;
+        demo = fuel - 0.2 * minutes;
     }
-    numberOfFlights++;
+    if (demo > 20) {
+        fuel = demo;
+        numberOfFlights++;
     }
-    else{
-
-    }
+    
 }
 
