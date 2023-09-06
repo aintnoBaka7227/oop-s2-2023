@@ -17,3 +17,7 @@ AirCraft **AirFleet::get_fleet() {
     return fleet;
 }
 
+AirFleet::~AirFleet() {
+    delete[] fleet;
+}
+

@@ -10,6 +10,7 @@ class AirFleet {
     public:
     AirFleet();
     AirCraft** get_fleet();
+    virtual ~AirFleet();
 };
 
 
