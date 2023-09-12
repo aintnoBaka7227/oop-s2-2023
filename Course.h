@@ -1,24 +1,20 @@
-#ifndef COURSE_H
-#define COURSE_H
-#include "University.h"
-#include "Person.h"
+#ifndef GRADE_H
+#define GRADE_H
 #include <string>
+#include "Person.h"
+
 class Course {
     private:
     std::string name;
-    int ID;
+    int id;
     Person** persons;
     int size;
     int current_size;
     public:
     Course();
-    Course(std::string name, int ID, int size);
-    void addPerson (Person* uni_member);
-    std::string get_name();
-    void set_name (std::string name);
-    int get_ID();
-    void set_ID (int ID);
+    Course(std::string name, int id, int size);
+    void addPerson(Person* new_person);
+    ~Course();
 };
-
 
 #endif

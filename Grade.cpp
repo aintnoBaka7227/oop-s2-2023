@@ -1,11 +1,15 @@
 #include "Grade.h"
+#include "Person.h"
+#include "Student.h"
 
-Grade::Grade(std::string assignment, int value) {
-    this->assignment = assignment;
-    this->value = value;
+Grade::Grade() {
+
 }
 
-Grade::Grade():Grade("math", 0) {
-
+Grade::Grade(int student_id, int course_id, std::string assignment, int value) {
+    this->student_id = student_id;
+    this->course_id = course_id;
+    this->assignment = assignment;
+    this->value = value;
 }
 

@@ -4,7 +4,7 @@ Person::Person(std::string name) {
     this->name = name;
 }
 
-Person::Person():Person("Paul") {
+Person::Person():Person("") {
 
 }
 

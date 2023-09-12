@@ -1,36 +1,25 @@
 #include "Course.h"
+#include "Person.h"
 
-Course::Course(std::string name, int ID, int size) {
+Course::Course(std::string name, int id, int size) {
     this->name = name;
-    this->ID = ID;
+    this->id = id;
     this->size = size;
     current_size = 0;
     persons = new Person*[size];
 }
 
-Course::Course():Course("comp sci", 0001, 0) {
+Course::Course():Course("", 0, 0) {
 
 }
 
-void Course::addPerson(Person* uni_member) {
+void Course::addPerson(Person* new_person) {
     if (current_size < size) {
-        persons[current_size] = uni_member;
+        persons[current_size] = new_person;
         current_size++;
     }
 }
 
-std::string Course::get_name() {
-    return name;
-}
-
-void Course::set_name(std::string name) {
-    this->name = name;
-}
-
-int Course::get_ID() {
-    return ID;
-}
-
-void Course::set_ID(int ID) {
-    this->ID = ID;
+Course::~Course() {
+    delete[] persons;
 }

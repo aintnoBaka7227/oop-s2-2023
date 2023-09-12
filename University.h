@@ -1,5 +1,7 @@
 #ifndef UNIVERSITY_H
 #define UNIVERSITY_H
+#include "Course.h"
+#include "Gradebook.h"
 #include <string>
 
 class University {
@@ -7,17 +9,13 @@ class University {
     std::string name;
     std::string location;
     Course* courses;
+    Gradebook* current_gradebook;
     int size;
     int current_size;
     public:
     University();
     University(std::string name, std::string location, int size);
-    int get_current_size();
-    void set_size(int size);
-    void addCourse(std::string name, int ID);
-
+    void addCourse(int id, std::string name);
 };
-
-
 
 #endif
