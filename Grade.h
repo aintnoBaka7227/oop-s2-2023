@@ -1,7 +1,8 @@
-#ifndef GRADE_H
-#define GRADE_H
+#ifndef GRADE1_H
+#define GRADE1_H
+
 #include <string>
-#include <Person.h>
+#include "Person.h"
 #include "Student.h"
 #include "Course.h"
 
