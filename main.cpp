@@ -18,6 +18,7 @@ cout << "no more USB ports available\n";
 }
 // let's unplug one use connection
 delete c[1];
+std::cout << "c[1] was deleted" << std::endl;
 // this should return ID 2 to the stack.
 USBConnection* a = USBConnection::CreateUsbConnection();
 if (a != nullptr){

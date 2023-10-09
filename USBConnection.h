@@ -29,6 +29,10 @@ class USBConnection {
             return nullptr;
         }
     };
+
+    ~USBConnection() {
+        ids.push(get_id());
+    }
 };
 
 std::stack<int> USBConnection::ids({3,2,1});
