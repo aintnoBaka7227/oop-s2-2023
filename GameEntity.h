@@ -21,6 +21,10 @@ class GameEntity {
     char getType() {
         return type;
     }
+
+    virtual void move(int dx, int dy) {
+        
+    }
 };
 
 
