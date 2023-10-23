@@ -12,8 +12,8 @@ class Explosion : public GameEntity, public Effect {
         type = 'E';
     }
     void apply(GameEntity& entity) {
-        position = std::make_tuple(-1, -1);
-        type = 'X';
+        entity.setPosition(-1,-1);
+        entity.setType('X');
     }
 
 };

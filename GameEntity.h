@@ -25,6 +25,12 @@ class GameEntity {
     virtual void move(int dx, int dy) {
         
     }
+    void setPosition (int x, int y) {
+        position = std::make_tuple(x, y);
+    }
+    void setType (char type) {
+        this->type = type;
+    }
 };
 
 

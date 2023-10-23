@@ -60,11 +60,9 @@ class Game {
                 }
             }
             if (numShips == 0) {
-                std::cout << "all ships exploded" << std::endl;
                 return;
             }
         }
-        std::cout << "max iterations reached" << std::endl;
     }
     ~Game() {
         for (int i = 0; i < entities.size(); i++) {
