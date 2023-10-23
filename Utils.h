@@ -14,6 +14,7 @@ class Utils {
     // sqrt, pow(a, 2) means a square
     static double calculateDistance(std::tuple<int, int> pos1, std::tuple<int, int> pos2) {
         double distance = sqrt(pow(std::get<0>(pos1)-std::get<0>(pos2),2)+pow(std::get<1>(pos1)-std::get<1>(pos2),2));
+        return distance;
     }
 };
 
