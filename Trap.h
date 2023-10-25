@@ -4,20 +4,17 @@
 
 class Trap : public Effect, public Cell {
     public:
+    bool active;
     Trap(int x, int y) {
         position = std::make_tuple(x, y);
         type = 'T';
+        active = true;
     }
     bool isActive() {
-        if (type == 'T') {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return active;
     }
     void apply(Cell& cell) {
-        cell.setType('X');
-        type = 'X';        
+        active = false;
+        type = 'T';        
     }
 };
